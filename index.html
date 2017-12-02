@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PDF Make Playground</title>
+  <link rel="stylesheet" href="assets/foundation.min.css" />
+  <link rel="stylesheet" href="assets/app.css" />
+</head>
+
+<body>
+
+  <div class="grid-container fluid">
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-8 small-offset-2 medium-6 medium-offset-3 large-4 large-offset-4">
+        <h1>PDFMake Test</h1>
+        <h4>Sample 1</h4>
+        <div class="button-group">
+
+          <!-- APP READS THE ACTION, DOC, AND TITLE -->
+          <a class="pdf-link button" action="download" doc="sample1" title="sample1">Download</a>
+          <a class="pdf-link button" action="open" doc="sample1" title="sample1">Open</a>
+          <a class="pdf-link button" action="print" doc="sample1" title="sample1">Print</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APP -->
+  <script src="assets/vendor/pdfmake.min.js"></script>
+  <script src="assets/vendor/vfs_fonts.js"></script>
+  <script src="assets/app.js"></script>
+
+  <!-- DOC IMAGES AS BASE64 DATA URI -->
+  <script src="assets/images.js"></script>
+
+  <!-- INDIVIDUAL DOCUMENT TEMPLATES -->
+  <script src="documents/sample1.js"></script>
+
+</body>
+
+</html>
